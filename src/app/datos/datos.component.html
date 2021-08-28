@@ -1,0 +1,16 @@
+<h1 class="titulo">
+    Email Sender
+</h1>
+<p>Emisor</p>
+    <input #emisor type = "text" value = "holasoyisay@gmail.com">
+<hr>
+<p>Remitente</p>
+    <input #remitente type = "text" value = "isaydamar@ciencias.unam.mx">
+<hr>
+<p>Asunto</p>
+    <input #asunto type = "text" value = "Asunto">
+<hr>
+<p>Mensaje</p>
+    <textarea #mensaje rows = "4" cols = "50">No necesariamente valor pero bueno</textarea>
+<hr>
+    <button (click) = "viewData(emisor.value , remitente.value, asunto.value, mensaje.value)">Enviar</button>
