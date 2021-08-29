@@ -1,16 +1,29 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <h1 class="titulo">
     Email Sender
 </h1>
 <p>Emisor</p>
-    <input #emisor type = "text" value = "holasoyisay@gmail.com">
+<div class="input-group mb-3">
+    <input #emisor class="form-control" type = "text" value = "holasoyisay@gmail.com">
+</div>
 <hr>
 <p>Remitente</p>
-    <input #remitente type = "text" value = "isaydamar@ciencias.unam.mx">
+<div class="input-group mb-3">
+    <input #remitente class="form-control" type = "text" value = "isaydamar@ciencias.unam.mx">
+</div>
 <hr>
 <p>Asunto</p>
-    <input #asunto type = "text" value = "Asunto">
+<div class="input-group mb-3">
+    <input #asunto class="form-control" type = "text" value = "Asunto">
+<hr>
+</div>
 <hr>
 <p>Mensaje</p>
-    <textarea #mensaje rows = "4" cols = "50">No necesariamente valor pero bueno</textarea>
+<div class="input-group">
+    <textarea #mensaje class="form-control" rows = "4" cols = "50">No necesariamente valor pero bueno</textarea>
+</div>
 <hr>
-    <button (click) = "viewData(emisor.value , remitente.value, asunto.value, mensaje.value)">Enviar</button>
+
+<div class="btn-group" role="group" arial-label="Basic outlined example">
+    <button type="button" class="btn btn-outline-primary" (click) = "viewData(emisor.value , remitente.value, asunto.value, mensaje.value)">Enviar</button>
+</div>
